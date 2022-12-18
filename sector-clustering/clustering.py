@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 from scipy.spatial import distance
-
+from sklearn.cluster import KMeans
 # zero-center the data adapted from lab 5 code
 def standardize(data):
     data_std = data.copy()
@@ -50,3 +50,31 @@ def my_kmeans(array, cluster_num, rs):
             centers = new_center
 
     return centers, label
+
+
+# perform k-means by looping aver a list of k values (adapted from homework 2)
+def looping_kmeans(array, klist):
+    # initialize output list
+    goodness = [0] * len(klist)
+
+    # implement sklearn k-means for each k value in the list
+    for k in klist:
+        km_alg = KMeans(n_clusters=k, init="random", random_state=2, max_iter=200)
+        fit = km_alg.fit(array)
+        centers = fit.cluster_centers_
+        labels = fit.labels_
+
+        # initialize total distance -- goodness of fit
+        cluster_total = 0
+        for i in range(k):
+            clusteri = array[labels == i]
+            # compute the distance of the point to cluster center
+            cluster_spread = distance.cdist(clusteri, centers[[i]], 'euclidean')
+            # take the sum of all the distances within the cluster
+            cluster_sum = np.sum(cluster_spread)
+            # add the total distance to the total cluster distances
+            cluster_total += cluster_sum
+        # store the sum of the distance as the goodness for k clusters
+        goodness[i] = cluster_total
+
+    return goodness

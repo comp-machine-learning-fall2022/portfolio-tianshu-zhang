@@ -60,3 +60,15 @@ def test_my_kmeans_labels():
     expected = 2
     label_max = np.max(my_kmeans(corporate2Dnew2, 3, 2019)[1])
     assert label_max == expected
+
+# test looping k-means
+def test_looping_kmeans_type():
+	assert isinstance(looping_kmeans(corporate2Dnew2,list(range(1,15))), list)
+
+def test_looping_kmeans_size():
+	expected = 14
+	assert len(looping_kmeans(corporate2Dnew2,list(range(1,15)))) == expected
+
+def test_looping_kmeans_goodness():
+	out = looping_kmeans(corporate2Dnew2,list(range(1,15)))
+	assert (out[1:] <= out[:-1])
