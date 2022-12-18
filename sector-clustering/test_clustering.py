@@ -4,7 +4,7 @@ from clustering import *
 from sklearn.decomposition import PCA
 
 # import data
-corporate_pd = pd.read_csv("../corporate_rating.csv")
+corporate_pd = pd.read_csv("corporate_rating.csv")
 corporate_np = corporate_pd.drop(['Rating','Name','Symbol','Rating Agency Name','Date','Sector'],axis = 1).to_numpy()
 sectors = corporate_pd[['Sector']].to_numpy()
 
