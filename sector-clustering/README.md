@@ -14,4 +14,6 @@ tertiary, and quarternary sectors. In terms of the comparison between the two k-
  but takes significantly more time as the number of clusters increases. The sklearn k-means algorithm seems to have a steady run time increase as the number of clusters increases.
 Both algorithms have similar peak memory usage.
 
+![cluster](four-clusters.png)
+
 For a complete walk-through of this project, please refer to `Corporate Sector Clustering.ipynb`.
