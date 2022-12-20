@@ -2,14 +2,23 @@
 
 ## Introduction
 
-self introduction, purpose of this portfolio, dataset source and intro,
-highlight skills and goals 
-clustering: PCA
+Hi my name is Tianshu Zhang and welcome to my machine learning portfolio. I'm a graduating senior at Smith College studying 
+Quantitative Economics and Mathematical Statistics with a concentration in Global Finance. This portfolio is a summary of the skills
+I learned in my machine learning course CSC294 Computation Machine Learning under Dr. Katherine Kinnaird. Besides being the final project for the course,
+this portfolio is also designed to document my machine learning projects and demonstrate my machine learning skills for potential
+employers. 
+
+Some of the skills that I choose to demonstrate in this portfolio are:
+1. Data wrangling and visualization (PCA dimension reduction, `numpy`,`pandas`, `pyplot` visualization)
+2. [Clustering](sector-clustering/README.md): k-means clustering, benchmarking, line-by-line profiling, `sklearn`
+3. [Classification](ratings-classification/README.md): k-nearest-neighbors, decision tree, random forest, cross-validation, `sklearn`
 
 ## Data set
-https://www.kaggle.com/datasets/agewerc/corporate-credit-rating
 
-A list of 2029 credit ratings issued by major agencies such as Standard and Poors to big US firms (traded on NYSE or Nasdaq) from 2010 to 2016.
+Throughout the portfolio, I explore a [credit rating data set](https://www.kaggle.com/datasets/agewerc/corporate-credit-rating) that contains
+a list of 2029 credit ratings issued by major agencies such as Standard and Poors to big US firms (traded on NYSE or Nasdaq) from 2010 to 2016.
+The data set is stored as `corporate_rating.csv`.
+
 There are 30 features for every company of which 25 are financial indicators. They can be divided in:
 
 - Liquidity Measurement Ratios: currentRatio, quickRatio, cashRatio, daysOfSalesOutstanding
@@ -17,9 +26,6 @@ There are 30 features for every company of which 25 are financial indicators. Th
 - Debt Ratios: debtRatio, debtEquityRatio
 - Operating Performance Ratios: assetTurnover
 - Cash Flow Indicator Ratios: operatingCashFlowPerShare, freeCashFlowPerShare, cashPerShare, operatingCashFlowSalesRatio, freeCashFlowOperatingCashFlowRatio
-
-For more information about financial indicators visit: https://financialmodelingprep.com/market-indexes-major-markets
-The additional features are Name, Symbol (for trading), Rating Agency Name, Date and Sector.
 
 The dataset is unbalanced, here is the frequency of ratings:
 - AAA: 7
@@ -33,4 +39,10 @@ The dataset is unbalanced, here is the frequency of ratings:
 - C: 2
 - D: 1
 
-## File Directory
+## File structure
+
+For each of the projects within the portfolio, there are three types of files:
+
+- `README.md`: the readme file that provides an overview of the project
+- `.py`,`test_ .py`: python files that contain the functions used in the project and the corresponding unit tests
+- `.png`: screenshots of unit tests passing and other visualizations
