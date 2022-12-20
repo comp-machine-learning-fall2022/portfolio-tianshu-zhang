@@ -11,7 +11,8 @@ employers.
 Some of the skills that I choose to demonstrate in this portfolio are:
 1. Data wrangling and visualization (PCA dimension reduction, `numpy`,`pandas`, `pyplot` visualization)
 2. [Clustering](sector-clustering): k-means clustering, benchmarking, line-by-line profiling, `sklearn`
-3. [Classification](ratings-classification): k-nearest-neighbors, decision tree, random forest, cross-validation, `sklearn`
+3. [Classification](ratings-classification): k-nearest-neighbors, decision trees, random forests, cross-validation, `sklearn`
+4. [Deep Learning](deep-learning): Neural Networks, Multi-layer Perceptron Neural Networks (MLP), `sklearn`,`tensorflow`
 
 ## Data set
 
