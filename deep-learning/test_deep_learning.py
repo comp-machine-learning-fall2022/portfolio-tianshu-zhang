@@ -3,7 +3,7 @@ from deep_learning import *
 import numpy
 
 # import data
-corporate_pd = pd.read_csv("../corporate_rating.csv")
+corporate_pd = pd.read_csv("corporate_rating.csv")
 corporate_pd = corporate_pd.drop(['Name','Date','Rating Agency Name','Sector'],axis = 1)
 corporate_filtered = corporate_pd.groupby('Symbol').filter(lambda x: len(x) > 2)
 corporate_filtered = corporate_filtered.drop('Symbol',axis = 1)
