@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Hi my name is Tianshu Zhang and welcome to my machine learning portfolio. I'm a graduating senior at Smith College studying 
+Hi my name is Tianshu Zhang and welcome to my machine learning portfolio. I graduated from Smith College in 2023 double majoring in 
 Quantitative Economics and Mathematical Statistics with a concentration in Global Finance. This portfolio is a summary of the skills
 I learned in my machine learning course CSC294 Computation Machine Learning under Dr. Katherine Kinnaird. Besides being the final project for the course,
 this portfolio is also designed to document my machine learning projects and demonstrate my machine learning skills for potential
